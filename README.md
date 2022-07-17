@@ -1,10 +1,12 @@
 # telegraf-influxdb-cloud-monitoring
 
-# 🚀 Browser-based SSH using Cloudflare & Terraform on Digitalocean 🚀
+# 🚀 Monitor linux system metrics using Telegraf collector and InfluxDB cloud 🚀
 
 https://github.com/coding-to-music/telegraf-influxdb-cloud-monitoring
 
 From / By
+
+https://portal.influxdata.com/downloads/
 
 ## Environment variables:
 
