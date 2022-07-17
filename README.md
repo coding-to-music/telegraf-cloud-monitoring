@@ -36,28 +36,6 @@ https://portal.influxdata.com/downloads/
 docker pull influxdb:2.3.0
 ```
 
-## 3. Start Telegraf
-
-Finally, you can run the following command to start the Telegraf agent running on your machine.
-
-```
-telegraf --config https://eastus-1.azure.cloud2.influxdata.com/api/v2/telegrafs/07fcce8c53afd000
-```
-
-InfluxDB 2.x Open Source Time Series Database
-
-InfluxDB is an open source time series database. It has everything you need from a time series platform in a single binary – a multi-tenanted time series database, UI and dashboarding tools, background processing and monitoring agent. All this makes deployment and setup a breeze and easier to secure.
-
-The InfluxDB Platform also includes APIs, tools, and an ecosystem that includes 10 client and server libraries, Telegraf plugins, visualization integrations with Grafana, Google Data Studio, and data sources integrations with Google Bigtable, BigQuery, and more.
-
-Version: InfluxDB v2.3.0
-
-Platform: Docker Image
-
-```
-docker pull influxdb:2.3.0
-```
-
 Version: InfluxDB v2.3.0
 
 Platform: Ubuntu & Debian
@@ -83,7 +61,17 @@ Platform: Docker Image
 
 # Debian-based image
 
+```
 docker pull telegraf
+```
+
+## 3. Start Telegraf
+
+Finally, you can run the following command to start the Telegraf agent running on your machine.
+
+```
+telegraf --config https://eastus-1.azure.cloud2.influxdata.com/api/v2/telegrafs/07fcce8c53afd000
+```
 
 ## IDE Extensions
 
@@ -109,4 +97,24 @@ echo '23a1c8836f0afc5ed24e0486339d7cc8f6790b83886c4c96995b88a061c5bb5d influxdb.
 echo 'deb [signed-by=/etc/apt/trusted.gpg.d/influxdb.gpg] https://repos.influxdata.com/debian stable main' | sudo tee /etc/apt/sources.list.d/influxdata.list
 
 sudo apt-get update && sudo apt-get install influxdb2-cli
+```
+
+## 1. Install the Latest Telegraf
+
+You can install the latest Telegraf by visiting the InfluxData Downloads page. If you already have Telegraf installed on your system, make sure it's up to date. You will need version 1.9.2 or higher.
+
+## 2. Configure your API Token
+
+Your API token is required for pushing data into InfluxDB. You can copy the following command to your terminal window to set an environment variable with your API token.
+
+```
+export INFLUX_TOKEN=<INFLUX_TOKEN>
+```
+
+## 3. Start Telegraf
+
+Finally, you can run the following command to start the Telegraf agent running on your machine.
+
+```
+telegraf --config https://eastus-1.azure.cloud2.influxdata.com/api/v2/telegrafs/07fcce8c53afd000
 ```
