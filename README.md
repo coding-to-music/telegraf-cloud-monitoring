@@ -4,7 +4,9 @@
 
 https://github.com/coding-to-music/telegraf-influxdb-cloud-monitoring
 
-From / By
+From / By https://docs.influxdata.com/influxdb/cloud/get-started/
+
+https://docs.influxdata.com/influxdb/cloud/get-started/#add-sample-data-with-community-templates
 
 https://portal.influxdata.com/downloads/
 
