@@ -137,3 +137,18 @@ Finally, you can run the following command to start the Telegraf agent running o
 ```
 telegraf --config https://eastus-1.azure.cloud2.influxdata.com/api/v2/telegrafs/07fcce8c53afd000
 ```
+
+## Stop InfluxDB and Telegraf from running
+
+```
+sudo netstat -nlp
+
+sudo systemctl status
+
+sudo systemctl status influxdb
+sudo systemctl stop influxdb
+sudo systemctl disable influxdb
+
+sudo systemctl status telegraf
+sudo systemctl disable telegraf
+```
